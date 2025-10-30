@@ -5,4 +5,5 @@ module comparador_faixa (
     output wire dentro
 );
     assign dentro = (medida >= lowerL) && (medida <= upperL);
-endmodule;
+
+endmodule
