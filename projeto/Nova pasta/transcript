@@ -1,0 +1,75 @@
+# Compile of circuito_pwm.v was successful.
+# Compile of circuito_pwm_tb.v failed with 11 errors.
+# Compile of contador_vai_vem.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of gerador_pulso.v was successful.
+# 5 compiles, 1 failed with 11 errors.
+# Error opening C:/Users/Enzo/Documents/PCS3645/projeto/modelsinm/(vlog-13069) C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v
+# Path name 'C:/Users/Enzo/Documents/PCS3645/projeto/modelsinm/(vlog-13069) C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v' doesn't exist.
+# Compile of circuito_pwm.v was successful.
+# Compile of circuito_pwm_tb.v was successful.
+# Compile of contador_vai_vem.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of gerador_pulso.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.circuito_pwm_tb
+# vsim -gui work.circuito_pwm_tb 
+# Start time: 10:36:03 on Oct 21,2025
+# Loading work.circuito_pwm_tb
+# Loading work.circuito_pwm
+# Loading work.edge_detector
+# Loading work.contador_vai_vem
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/circuito_pwm_tb/clockPeriod \
+sim:/circuito_pwm_tb/clock_in \
+sim:/circuito_pwm_tb/reset_in \
+sim:/circuito_pwm_tb/direita_in \
+sim:/circuito_pwm_tb/esquerda_in \
+sim:/circuito_pwm_tb/pwm_out \
+sim:/circuito_pwm_tb/pos_out
+run -all
+# Inicio da simulacao
+# ... reset gerado
+# Fim da simulacao
+# ** Note: $stop    : C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v(99)
+#    Time: 25620 ns  Iteration: 0  Instance: /circuito_pwm_tb
+# Break in Module circuito_pwm_tb at C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v line 99
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of circuito_pwm.v was successful.
+# Compile of circuito_pwm_tb.v was successful.
+# Compile of contador_vai_vem.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of gerador_pulso.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.circuito_pwm_tb
+# Loading work.circuito_pwm
+# Loading work.edge_detector
+# Loading work.contador_vai_vem
+run -all
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# Inicio da simulacao
+# ... reset gerado
+# Fim da simulacao
+# ** Note: $stop    : C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v(101)
+#    Time: 25620 ns  Iteration: 0  Instance: /circuito_pwm_tb
+# Break in Module circuito_pwm_tb at C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v line 101
+add wave -position insertpoint sim:/circuito_pwm_tb/circuito_pwm/*
+restart -f
+run -all
+# GetModuleFileName: Não foi possível encontrar o módulo especificado.
+# 
+# 
+# Inicio da simulacao
+# ... reset gerado
+# Fim da simulacao
+# ** Note: $stop    : C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v(101)
+#    Time: 25620 ns  Iteration: 0  Instance: /circuito_pwm_tb
+# Break in Module circuito_pwm_tb at C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v line 101
+# End time: 11:18:38 on Oct 21,2025, Elapsed time: 0:42:35
+# Errors: 0, Warnings: 4

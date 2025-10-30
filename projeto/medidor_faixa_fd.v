@@ -25,16 +25,16 @@ module medidor_faixa_fd(
 
 // vamos enviar XYZ#
 wire [1:0] sel_char, pos_addr;
-wire [11:0] w_medida;
+wire [11:0] w_medida, w_medida_reg;
 wire w_dentro, w_fim_3sec;
 
 wire [6:0] centena_ascii, dezena_ascii, unidade_ascii, w_dados_ascii;
 wire [6:0] ascii_hash = 7'b0100011;
 
-assign db_medida = w_medida;
-assign unidade_ascii = {3'b011, w_medida[3:0]};
-assign dezena_ascii  = {3'b011, w_medida[7:4]};
-assign centena_ascii = {3'b011, w_medida[11:8]};
+assign db_medida = w_medida_reg;
+assign unidade_ascii = {3'b011, w_medida_reg[3:0]};
+assign dezena_ascii  = {3'b011, w_medida_reg[7:4]};
+assign centena_ascii = {3'b011, w_medida_reg[11:8]};
 
 assign acertou = fim_3sec;
 assign dentro = w_dentro;
@@ -50,8 +50,19 @@ interface_hcsr04 interface_hcsr04 (
     .pronto(pronto_medida)
 );
 
-//3s
-contador_m #(.M(150_000_000), .N(28)) contador_3sec (
+// //3s
+// contador_m #(.M(150_000_000), .N(28)) contador_3sec (
+//     .clock(clock),
+//     .zera_as(),
+//     .zera_s(~w_dentro),
+//     .conta(w_dentro),
+//     .Q(),
+//     .fim(w_fim_3sec),
+//     .meio()
+// );
+
+//20ms p/ teste
+contador_m #(.M(1_000_000), .N(28)) contador_3sec (
     .clock(clock),
     .zera_as(),
     .zera_s(~w_dentro),
@@ -61,8 +72,19 @@ contador_m #(.M(150_000_000), .N(28)) contador_3sec (
     .meio()
 );
 
-//250ms
-contador_m #(.M(12_500_000), .N(24)) contador_time (
+// //250ms
+// contador_m #(.M(12_500_000), .N(24)) contador_time (
+//     .clock(clock),
+//     .zera_as(),
+//     .zera_s(zera_time),
+//     .conta(conta_time),
+//     .Q(),
+//     .fim(fim_time),
+//     .meio()
+// );
+
+//20us para teste
+contador_m #(.M(1000), .N(24)) contador_time (
     .clock(clock),
     .zera_as(),
     .zera_s(zera_time),
@@ -75,7 +97,7 @@ contador_m #(.M(12_500_000), .N(24)) contador_time (
 comparador_faixa comparador_faixa (
     .upperL(upperL),
     .lowerL(lowerL),
-    .medida(w_medida),
+    .medida(w_medida_reg),
     .dentro(w_dentro)
 );
 
@@ -107,5 +129,15 @@ mux_4x1 #(.BITS(7)) mux_char(
     .MUX_OUT(w_dados_ascii)
 );
 
+
+registrador_n #(
+    .N(12)
+) registrador_medida (
+    .clock  (clock    ),
+    .clear  (zera),
+    .enable (pronto_medida),
+    .D      (w_medida ),
+    .Q      (w_medida_reg)
+);
 
 endmodule

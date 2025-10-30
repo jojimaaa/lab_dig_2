@@ -60,7 +60,7 @@ module medidor_faixa_tb;
     // Largura do pulso
     reg [31:0] larguraPulso; // Usando 32 bits para acomodar tempos maiores
 
-    reg [31:0] esperaEntreMedidas = 251_000_000; //(250ms)
+    reg [31:0] esperaEntreMedidas = 450_000; //(20,1us)
 
     // Geração dos sinais de entrada (estímulos)
     initial begin
@@ -75,8 +75,8 @@ module medidor_faixa_tb;
         // Valores iniciais
         medir_in = 0;
         echo_in  = 0;
-        upperL_in = 12'b1000_0000_0000; //080cm
-        lowerL_in = 12'b0111_0000_0000; //070cm
+        upperL_in = 12'b0000_1000_0000; //080cm
+        lowerL_in = 12'b0000_0111_0000; //070cm
 
         // Reset
         caso = 0; 
@@ -126,8 +126,8 @@ module medidor_faixa_tb;
 
 
         // 1) Determina a largura do pulso echo
-        $display("Caso de teste %0d: %0dus", 4, casos_teste[4]);
-        larguraPulso = casos_teste[0]*1000; // 1us=1000
+        $display("Caso de teste %0d: %0dus", 4, casos_teste[3]);
+        larguraPulso = casos_teste[3]*1000; // 1us=1000
 
         #(esperaEntreMedidas);
         echo_in = 1;
@@ -188,7 +188,65 @@ module medidor_faixa_tb;
         #(larguraPulso);
         echo_in = 0;
         #(esperaEntreMedidas);
-    
+        
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        
+        #(esperaEntreMedidas);
+        echo_in = 1;
+        #(larguraPulso);
+        echo_in = 0;
+        #(esperaEntreMedidas);
     
         // Fim da simulação
         $display("Fim das simulacoes");

@@ -1,0 +1,126 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Enzo/Documents/PCS3645/exp05/modelsim
+vcircuito_pwm
+Z0 !s110 1761053852
+!i10b 1
+!s100 ==5E9kRJOczlOS3i0CKaM2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ID_>ReDKHUJzP[Sd3lDP;T2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Enzo/Documents/PCS3645/projeto/modelsinm
+w1761052211
+8C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v
+!i122 9
+L0 16 80
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1761053852.000000
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vcircuito_pwm_tb
+R0
+!i10b 1
+!s100 `G97clWWClg:JcW=bLU_O3
+R1
+I8WXWji9lOVbYbBHU`E48d3
+R2
+R3
+w1761053837
+8C:\Users\Enzo\Documents\PCS3645\projeto\circuito_pwm_tb.v
+FC:\Users\Enzo\Documents\PCS3645\projeto\circuito_pwm_tb.v
+!i122 10
+L0 3 102
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:\Users\Enzo\Documents\PCS3645\projeto\circuito_pwm_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Enzo\Documents\PCS3645\projeto\circuito_pwm_tb.v|
+!i113 1
+R6
+R7
+vcontador_vai_vem
+R0
+!i10b 1
+!s100 QVnRJ=E?_L1WDKkfjac?M2
+R1
+IEJ>LmjYZSYUf3mHi4<gg43
+R2
+R3
+w1761051660
+8C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v
+!i122 11
+L0 1 46
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v|
+!i113 1
+R6
+R7
+vedge_detector
+R0
+!i10b 1
+!s100 AEDYJD37[Ybb^@2QMVV>20
+R1
+IE`eWC3ezFgeU^K=`J@CD@1
+R2
+R3
+Z8 w1759142632
+8C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v
+!i122 12
+L0 19 23
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v|
+!i113 1
+R6
+R7
+vgerador_pulso
+R0
+!i10b 1
+!s100 8AoYG=9jUP9YV[a7R[WFO1
+R1
+IC4l]48zFl`>8GLVcAb<o@1
+R2
+R3
+R8
+8C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v
+!i122 13
+L0 14 69
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v|
+!i113 1
+R6
+R7

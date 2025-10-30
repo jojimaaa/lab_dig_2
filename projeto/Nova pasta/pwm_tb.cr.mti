@@ -1,0 +1,36 @@
+C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v {1 {vlog -work work -stats=none {C:\Users\Enzo\Documents\PCS3645\projeto\circuito_pwm_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module circuito_pwm_tb
+
+Top level modules:
+	circuito_pwm_tb
+
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module gerador_pulso
+
+Top level modules:
+	gerador_pulso
+
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module edge_detector
+
+Top level modules:
+	edge_detector
+
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_vai_vem
+
+Top level modules:
+	contador_vai_vem
+
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module circuito_pwm
+
+Top level modules:
+	circuito_pwm
+
+} {} {}}

@@ -1,0 +1,46 @@
+|circuito_pwm
+clock => clock.IN3
+reset => reset.IN1
+direita => direita.IN1
+esquerda => esquerda.IN1
+pwm <= s_pwm.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= contador_vai_vem:contador_vai_vem.Q
+pos[1] <= contador_vai_vem:contador_vai_vem.Q
+db_pwm <= s_pwm.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_pwm|edge_detector:direita_detector
+clock => reg1.CLK
+clock => reg0.CLK
+reset => reg1.ACLR
+reset => reg0.ACLR
+sinal => reg0.DATAIN
+pulso <= pulso.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_pwm|edge_detector:esquerda_detector
+clock => reg1.CLK
+clock => reg0.CLK
+reset => reg1.ACLR
+reset => reg0.ACLR
+sinal => reg0.DATAIN
+pulso <= pulso.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito_pwm|contador_vai_vem:contador_vai_vem
+clock => Q[0]~reg0.CLK
+clock => Q[1]~reg0.CLK
+zera_as => Q[0]~reg0.ACLR
+zera_as => Q[1]~reg0.ACLR
+zera_s => Q.OUTPUTSELECT
+zera_s => Q.OUTPUTSELECT
+vai => Q.OUTPUTSELECT
+vai => Q.OUTPUTSELECT
+vem => Q.OUTPUTSELECT
+vem => Q.OUTPUTSELECT
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+fim <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+meio <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+
+
