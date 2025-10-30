@@ -1,6 +1,5 @@
 module medidor_faixa(
     input wire clock,
-    input wire reset,
     input wire medir,
     input wire [11:0] upperL,
     input wire [11:0] lowerL,
