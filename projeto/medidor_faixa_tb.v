@@ -34,7 +34,6 @@ module medidor_faixa_tb;
     // Componente a ser testado (Device Under Test -- DUT)
     medidor_faixa medidor_faixa(
         .clock(clock_in),
-        .reset(reset_in),
         .medir(medir_in),
         .upperL(upperL_in),
         .lowerL(lowerL_in),

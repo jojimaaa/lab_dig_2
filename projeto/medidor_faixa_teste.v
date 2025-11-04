@@ -9,13 +9,12 @@ module medidor_faixa_teste(
     output dentro_out
 );
 
-    reg [11:0] upperL__in = 12'b0000_0010_0000;
-    reg [11:0] lowerL__in = 12'b0000_0001_0000;
+    reg [11:0] upperL_in = 12'b0000_0010_0000;
+    reg [11:0] lowerL_in = 12'b0000_0001_0000;
 
 
     medidor_faixa medidor_faixa(
         .clock(clock_in),
-        .reset(reset_in),
         .medir(medir_in),
         .upperL(upperL_in),
         .lowerL(lowerL_in),

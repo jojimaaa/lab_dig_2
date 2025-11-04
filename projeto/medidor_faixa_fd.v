@@ -122,9 +122,9 @@ contador_m #(.M(4), .N(3)) contador_char (
 
 mux_4x1 #(.BITS(7)) mux_char(
     .D3(ascii_hash),
-    .D2(centena_ascii),
+    .D2(unidade_ascii),
     .D1(dezena_ascii),
-    .D0(unidade_ascii),
+    .D0(centena_ascii),
     .SEL(sel_char),
     .MUX_OUT(w_dados_ascii)
 );
