@@ -23,6 +23,7 @@ module interface_hcsr04 (
 
     // Sinais internos
     wire        s_zera;
+	 wire        s_timeout, s_conta_timeout, s_zera_timeout;
     wire        s_gera;
     wire        s_registra;
     wire        s_fim_medida;
@@ -39,6 +40,9 @@ module interface_hcsr04 (
         .gera      (s_gera      ),
         .registra  (s_registra  ),
         .pronto    (pronto      ),
+		  .conta_timeout(s_conta_timeout),
+		  .zera_timeout(s_zera_timeout),
+		  .timeout(s_timeout),
         .db_estado (   )				// (desconectado)
     );
 
@@ -52,6 +56,9 @@ module interface_hcsr04 (
         .fim_medida(s_fim_medida),
         .trigger   (trigger     ),
         .fim       (            ),  // (desconectado)
+		  .conta_timeout(s_conta_timeout),
+		  .zera_timeout(s_zera_timeout),
+		  .timeout(s_timeout),
         .distancia (s_medida    )
     );
 

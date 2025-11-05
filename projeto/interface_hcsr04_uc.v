@@ -16,10 +16,13 @@ module interface_hcsr04_uc (
     input wire       reset,
     input wire       medir,
     input wire       echo,
+	 input wire       timeout,
     input wire       fim_medida,
     output reg       zera,
     output reg       gera,
     output reg       registra,
+	 output reg       conta_timeout,
+	 output reg       zera_timeout,
     output reg       pronto,
     output reg [3:0] db_estado 
 );
@@ -57,7 +60,7 @@ module interface_hcsr04_uc (
                 Eprox = espera_echo;
 
             espera_echo: 
-                Eprox = echo ? medida : espera_echo;
+                Eprox = timeout ? envia_trigger : echo ? medida : espera_echo;
 
             medida: 
                 Eprox = fim_medida ? armazenamento : medida;
@@ -77,6 +80,8 @@ module interface_hcsr04_uc (
     always @(*) begin
         
             zera = (Eatual == preparacao);
+				zera_timeout = (Eatual == envia_trigger);
+				conta_timeout = (Eatual == espera_echo);
             gera = (Eatual == envia_trigger);
             registra = (Eatual == armazenamento);
             pronto = (Eatual == final_medida);

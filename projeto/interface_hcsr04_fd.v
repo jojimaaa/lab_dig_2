@@ -16,9 +16,12 @@ module interface_hcsr04_fd (
     input wire         pulso,
     input wire         zera,
     input wire         gera,
+	 input wire         zera_timeout,
+	 input wire         conta_timeout,
     input wire         registra,
     output wire        fim_medida,
     output wire        trigger,
+	 output wire        timeout,
     output wire        fim,
     output wire [11:0] distancia
 );
@@ -52,6 +55,16 @@ module interface_hcsr04_fd (
         .fim    (fim),
         .pronto (fim_medida)
     );
+	 
+	 contador_m #(.M(50_000_000), .N(28)) contador_1sec (
+    .clock(clock),
+    .zera_as(),
+    .zera_s(zera_timeout),
+    .conta(conta_timeout),
+    .Q(),
+    .fim(timeout),
+    .meio()
+);
 
     // (U3) registrador
     registrador_n #(

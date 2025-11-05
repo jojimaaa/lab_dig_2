@@ -31,12 +31,11 @@ module medidor_faixa_uc (
     parameter proximo_char = 4'b0110;
     parameter espera = 4'b1000;
 
-
     // Memória de estado
     always @(posedge clock, posedge reset, posedge fim_3sec, negedge medir) begin
-        if (reset || fim_3sec || ~medir)
+        if (reset || ~medir || fim_3sec)
             Eatual <= inicial;
-        else
+		else
             Eatual <= Eprox; 
     end
 
