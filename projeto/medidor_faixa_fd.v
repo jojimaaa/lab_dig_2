@@ -50,7 +50,7 @@ interface_hcsr04 interface_hcsr04 (
     .pronto(pronto_medida)
 );
 
-//3s
+// //3s
 // contador_m_trava #(.M(150_000_000), .N(28)) contador_3sec ( //teste
 //     .clock(clock),
 //     .zera_as(),
@@ -60,29 +60,7 @@ interface_hcsr04 interface_hcsr04 (
 //     .fim(w_fim_3sec),
 //     .meio()
 // );
-contador_m_trava #(.M(150_000_000), .N(28)) contador_3sec (
-    .clock(clock),
-    .zera_as(),
-    .zera_s(~w_dentro),
-    .conta(w_dentro),
-    .Q(),
-    .fim(w_fim_3sec),
-    .meio()
-);
-
-//100ms
-contador_m #(.M(5_000_000), .N(24)) contador_time (
-    .clock(clock),
-    .zera_as(),
-    .zera_s(zera_time),
-    .conta(conta_time),
-    .Q(),
-    .fim(fim_time),
-    .meio()
-);
-
-// // 20ms p/ teste
-// contador_m #(.M(1_000_000), .N(28)) contador_3sec (
+// contador_m_trava #(.M(150_000_000), .N(28)) contador_3sec (
 //     .clock(clock),
 //     .zera_as(),
 //     .zera_s(~w_dentro),
@@ -92,9 +70,8 @@ contador_m #(.M(5_000_000), .N(24)) contador_time (
 //     .meio()
 // );
 
-
-// // 20us para teste
-// contador_m #(.M(1000), .N(24)) contador_time (
+// //100ms
+// contador_m #(.M(5_000_000), .N(24)) contador_time (
 //     .clock(clock),
 //     .zera_as(),
 //     .zera_s(zera_time),
@@ -103,6 +80,29 @@ contador_m #(.M(5_000_000), .N(24)) contador_time (
 //     .fim(fim_time),
 //     .meio()
 // );
+
+// 20ms p/ teste
+contador_m #(.M(1_000_000), .N(28)) contador_3sec (
+    .clock(clock),
+    .zera_as(),
+    .zera_s(~w_dentro),
+    .conta(w_dentro),
+    .Q(),
+    .fim(w_fim_3sec),
+    .meio()
+);
+
+
+// 200us para teste
+contador_m #(.M(10000), .N(24)) contador_time (
+    .clock(clock),
+    .zera_as(),
+    .zera_s(zera_time),
+    .conta(conta_time),
+    .Q(),
+    .fim(fim_time),
+    .meio()
+);
 
 comparador_faixa comparador_faixa (
     .upperL(upperL),
@@ -133,8 +133,8 @@ contador_m #(.M(4), .N(3)) contador_char (
 mux_4x1 #(.BITS(7)) mux_char(
     .D3(ascii_hash),
     .D2(unidade_ascii),
-	 .D1(dezena_ascii),
-	 .D0(centena_ascii),
+    .D1(dezena_ascii),
+    .D0(centena_ascii),
     .SEL(sel_char),
     .MUX_OUT(w_dados_ascii)
 );

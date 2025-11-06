@@ -5,7 +5,7 @@ module medidor_faixa_teste(
     output trigger_out,
     output acertou_out,
     output saida_serial_out,
-	 output wire [6:0] hex0,
+    output wire [6:0] hex0,
     output wire [6:0] hex1,
     output wire [6:0] hex2,
     output dentro_out
