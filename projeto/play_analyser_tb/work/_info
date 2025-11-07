@@ -10,7 +10,7 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 vbinaryTObcd
-Z0 !s110 1762461122
+Z0 !s110 1762525417
 !i10b 1
 !s100 ULXYYL`K0Y?cV^Ko9ZEz^2
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,42 +20,42 @@ Z3 dC:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb
 w1762387684
 8C:/Users/Enzo/Documents/PCS3645/projeto/binaryTObcd.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/binaryTObcd.v
-!i122 534
+!i122 599
 L0 1 49
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1762461122.000000
+!s108 1762525416.000000
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/binaryTObcd.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/binaryTObcd.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 nbinary@t@obcd
 vcircuito_pwm
 R0
 !i10b 1
-!s100 ==5E9kRJOczlOS3i0CKaM2
+!s100 _UzR9kIH`I3U;PeCJeKag3
 R1
-ID_>ReDKHUJzP[Sd3lDP;T2
+Ib2@KSBZ1kDFSKzVjoLfbc2
 R2
 R3
-Z8 w1762249684
+w1762490544
 8C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v
-!i122 535
-L0 16 80
+!i122 600
+L0 16 82
 R4
 r1
 !s85 0
 31
-R5
+Z7 !s108 1762525417.000000
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v|
 !i113 1
+R5
 R6
-R7
 vcomparador_faixa
 R0
 !i10b 1
@@ -64,21 +64,21 @@ R1
 IJ0NhZmhb85<8[76UF36G?0
 R2
 R3
-Z9 w1762239848
+Z8 w1762239848
 8C:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v
-!i122 536
+!i122 601
 L0 1 9
 R4
 r1
 !s85 0
 31
-R5
+R7
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v|
 !i113 1
+R5
 R6
-R7
 vcontador_bcd_3digitos
 R0
 !i10b 1
@@ -87,21 +87,21 @@ R1
 I6ifL6PP@6YWXZ031`]P1C2
 R2
 R3
-R9
+R8
 8C:/Users/Enzo/Documents/PCS3645/projeto/contador_bcd_3digitos.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/contador_bcd_3digitos.v
-!i122 537
+!i122 602
 L0 14 45
 R4
 r1
 !s85 0
 31
-R5
+R7
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_bcd_3digitos.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_bcd_3digitos.v|
 !i113 1
+R5
 R6
-R7
 vcontador_cm
 R0
 !i10b 1
@@ -110,21 +110,21 @@ R1
 IXIA?@h4C>joo_Rn2G@Zc?0
 R2
 R3
-R9
+R8
 8C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/contador_cm.v
-!i122 538
+!i122 603
 L0 15 53
 R4
 r1
 !s85 0
 31
-R5
+R7
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm.v|
 !i113 1
+R5
 R6
-R7
 vcontador_cm_fd
 R0
 !i10b 1
@@ -133,46 +133,46 @@ R1
 I^2=aTcha84>9aBO2m4jOC0
 R2
 R3
-R9
+R8
 8C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_fd.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_fd.v
-!i122 539
+!i122 604
 L0 15 43
 R4
 r1
 !s85 0
 31
-R5
+R7
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_fd.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_fd.v|
 !i113 1
+R5
 R6
-R7
 vcontador_cm_uc
-Z10 !s110 1762461123
+R0
 !i10b 1
 !s100 Sa4IT=locOZAW:LRET<FW2
 R1
 IWReL730jKo@g_HPMkg@g>0
 R2
 R3
-R9
+R8
 8C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_uc.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_uc.v
-!i122 540
+!i122 605
 L0 16 64
 R4
 r1
 !s85 0
 31
-Z11 !s108 1762461123.000000
+R7
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_uc.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_uc.v|
 !i113 1
+R5
 R6
-R7
 vcontador_m
-R10
+R0
 !i10b 1
 !s100 @kCDOd=RFSGKbO:9]n[;j2
 R1
@@ -182,89 +182,89 @@ R3
 w1762248366
 8C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v
-!i122 541
+!i122 606
 L0 16 39
 R4
 r1
 !s85 0
 31
-R11
+R7
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v|
 !i113 1
+R5
 R6
-R7
 vcontador_vai_vem
-R10
+R0
 !i10b 1
-!s100 QVnRJ=E?_L1WDKkfjac?M2
+!s100 ome@J_n;OJ;nbNMg1j8zT3
 R1
-IEJ>LmjYZSYUf3mHi4<gg43
+IO]^UJc:knaQKgm`W[KOG=2
 R2
 R3
-R8
+w1762463771
 8C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v
-!i122 542
-L0 1 46
+!i122 607
+L0 1 47
 R4
 r1
 !s85 0
 31
-R11
+R7
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v|
 !i113 1
+R5
 R6
-R7
 vdeslocador_n
-R10
+Z9 !s110 1762525418
 !i10b 1
 !s100 ekUiQZ6Ef_XO5Z3[98`6X2
 R1
 IU8K[<=WFG^_h=WO>WPJf[1
 R2
 R3
-R9
+R8
 8C:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v
-!i122 543
+!i122 608
 L0 15 31
 R4
 r1
 !s85 0
 31
-R11
+R7
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v|
 !i113 1
+R5
 R6
-R7
 vedge_detector
-R10
+R9
 !i10b 1
 !s100 AEDYJD37[Ybb^@2QMVV>20
 R1
 IE`eWC3ezFgeU^K=`J@CD@1
 R2
 R3
-R8
+w1762249684
 8C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v
-!i122 544
+!i122 609
 L0 19 23
 R4
 r1
 !s85 0
 31
-R11
+Z10 !s108 1762525418.000000
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v|
 !i113 1
+R5
 R6
-R7
 vgerador_pulso
-R10
+R9
 !i10b 1
 !s100 8AoYG=9jUP9YV[a7R[WFO1
 R1
@@ -274,20 +274,20 @@ R3
 w1762249686
 8C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v
-!i122 545
+!i122 610
 L0 14 69
 R4
 r1
 !s85 0
 31
-R11
+R10
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v|
 !i113 1
+R5
 R6
-R7
 vhexa7seg
-R10
+R9
 !i10b 1
 !s100 :20kA`7`L0gDF2=JFj`=l2
 R1
@@ -297,43 +297,43 @@ R3
 w1756301818
 8C:/Users/Enzo/Documents/PCS3645/projeto/hexa7seg.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/hexa7seg.v
-!i122 546
+!i122 611
 L0 22 38
 R4
 r1
 !s85 0
 31
-R11
+R10
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/hexa7seg.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/hexa7seg.v|
 !i113 1
+R5
 R6
-R7
 vmux_4x1
-R10
+R9
 !i10b 1
 !s100 oYLVJHcjNNf^HJMGdb1e11
 R1
 IW82zK2WoZZWhLgB3X8D<K3
 R2
 R3
-R9
+R8
 8C:/Users/Enzo/Documents/PCS3645/projeto/mux_4x1.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/mux_4x1.v
-!i122 547
+!i122 612
 L0 17 18
 R4
 r1
 !s85 0
 31
-R11
+R10
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/mux_4x1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/mux_4x1.v|
 !i113 1
+R5
 R6
-R7
 vplay_analyser
-Z12 !s110 1762461124
+R9
 !i10b 1
 !s100 B>mPjFnT^ROl^llhk2jaP3
 R1
@@ -343,20 +343,20 @@ R3
 w1762431867
 8C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/play_analyser.v
-!i122 548
+!i122 613
 L0 1 142
 R4
 r1
 !s85 0
 31
-R11
+R10
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser.v|
 !i113 1
+R5
 R6
-R7
 vplay_analyser_fd
-R12
+R9
 !i10b 1
 !s100 ?;;P71HdTomfZSa`gC8TW0
 R1
@@ -366,20 +366,20 @@ R3
 w1762460913
 8C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v
-!i122 549
+!i122 614
 L0 1 114
 R4
 r1
 !s85 0
 31
-Z13 !s108 1762461124.000000
+R10
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v|
 !i113 1
+R5
 R6
-R7
 vplay_analyser_tb
-R12
+R9
 !i10b 1
 !s100 V1QRS2?kj[G6KdT:l=QX72
 R1
@@ -389,20 +389,20 @@ R3
 w1762461116
 8C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v
-!i122 550
+!i122 615
 L0 3 108
 R4
 r1
 !s85 0
 31
-R13
+R10
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v|
 !i113 1
+R5
 R6
-R7
 vplay_analyser_uc
-R12
+Z11 !s110 1762525419
 !i10b 1
 !s100 Af^TV=LPVOX;oIj;[YP:j1
 R1
@@ -412,109 +412,109 @@ R3
 w1762434685
 8C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_uc.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_uc.v
-!i122 551
+!i122 616
 L0 1 62
 R4
 r1
 !s85 0
 31
-R13
+R10
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_uc.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_uc.v|
 !i113 1
+R5
 R6
-R7
 vregistrador_n
-R12
+R11
 !i10b 1
 !s100 c33QzNOWDW9lh[K4:od@l2
 R1
 IHgiSIGZPEgM]of6Sm`nN73
 R2
 R3
-R9
+R8
 8C:/Users/Enzo/Documents/PCS3645/projeto/registrador_n.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/registrador_n.v
-!i122 552
+!i122 617
 L0 17 20
 R4
 r1
 !s85 0
 31
-R13
+Z12 !s108 1762525419.000000
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/registrador_n.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/registrador_n.v|
 !i113 1
+R5
 R6
-R7
 vtx_serial_7E1
-R12
+R11
 !i10b 1
 !s100 ^;E>aJFR:oO3F=EShFgkD2
 R1
 IMDVl^3g?cm51Cl>]CdPUK3
 R2
 R3
-R9
+w1762524260
 8C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v
-!i122 553
+!i122 618
 L0 1 83
 R4
 r1
 !s85 0
 31
-R13
+R12
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v|
 !i113 1
+R5
 R6
-R7
 ntx_serial_7@e1
 vtx_serial_7E1_fd
-R12
+R11
 !i10b 1
 !s100 KIA5JXQXQBAX3Q:]:S>F[1
 R1
 I:F?Uj`WKF^d@M<ZdcDG1l2
 R2
 R3
-R9
+R8
 8C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v
-!i122 554
+!i122 619
 L0 1 59
 R4
 r1
 !s85 0
 31
-R13
+R12
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v|
 !i113 1
+R5
 R6
-R7
 ntx_serial_7@e1_fd
 vtx_serial_uc
-R12
+R11
 !i10b 1
 !s100 cQPFd=hIOZm6zCKDVFA?=3
 R1
 IG790a<X:f:WdE5cCSd>BJ3
 R2
 R3
-R9
+R8
 8C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_uc.v
 FC:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_uc.v
-!i122 555
+!i122 620
 L0 17 64
 R4
 r1
 !s85 0
 31
-R13
+R12
 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_uc.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_uc.v|
 !i113 1
+R5
 R6
-R7

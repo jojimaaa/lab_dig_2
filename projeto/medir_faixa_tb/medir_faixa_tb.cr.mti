@@ -5,13 +5,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	tx_serial_uc
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module circuito_pwm_tb
-
-Top level modules:
-	circuito_pwm_tb
-
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_uc.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_uc.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module medidor_faixa_uc
@@ -40,26 +33,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	interface_hcsr04
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module play_analyser_fd
-
-Top level modules:
-	play_analyser_fd
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module circuito_pwm
-
-Top level modules:
-	circuito_pwm
-
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module deslocador_n
 
 Top level modules:
 	deslocador_n
+
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module edge_detector
+
+Top level modules:
+	edge_detector
 
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -82,47 +68,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	gerador_pulso
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module edge_detector
-
-Top level modules:
-	edge_detector
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_fd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_fd.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module neurosync_controller_dual_fd
-
-Top level modules:
-	neurosync_controller_dual_fd
-
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tx_serial_7E1
 
 Top level modules:
 	tx_serial_7E1
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module contador_vai_vem
-
-Top level modules:
-	contador_vai_vem
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module comparador_faixa
-
-Top level modules:
-	comparador_faixa
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_teste.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_teste.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module medidor_faixa_teste
-
-Top level modules:
-	medidor_faixa_teste
 
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -131,19 +82,26 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	tx_serial_7E1_fd
 
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_teste.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_teste.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module medidor_faixa_teste
+
+Top level modules:
+	medidor_faixa_teste
+
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module comparador_faixa
+
+Top level modules:
+	comparador_faixa
+
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module contador_cm
 
 Top level modules:
 	contador_cm
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/binaryTObcd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/binaryTObcd.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module binaryTObcd
-
-Top level modules:
-	binaryTObcd
 
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_tb.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -159,20 +117,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	contador_cm_fd
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_m_trava.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_m_trava.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module contador_m_trava
-
-Top level modules:
-	contador_m_trava
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_uc.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_uc.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module play_analyser_uc
-
-Top level modules:
-	play_analyser_uc
-
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/registrador_n.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/registrador_n.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module registrador_n
@@ -180,19 +124,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	registrador_n
 
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_m_trava.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_m_trava.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_m_trava
+
+Top level modules:
+	contador_m_trava
+
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/hexa7seg.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/hexa7seg.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module hexa7seg
 
 Top level modules:
 	hexa7seg
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module play_analyser
-
-Top level modules:
-	play_analyser
 
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04_fd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04_fd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -208,12 +152,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	medidor_faixa_fd
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_uc.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_uc.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_bcd_3digitos.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_bcd_3digitos.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module contador_bcd_3digitos
@@ -227,12 +165,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	contador_cm_uc
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module play_analyser_tb
-
-Top level modules:
-	play_analyser_tb
 
 } {} {}}

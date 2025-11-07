@@ -6,14 +6,18 @@ module circuito_pwm_tb();
     reg       reset_in;
     reg       direita_in;
     reg       esquerda_in;
+    reg       set_pos_in;
+    reg [1:0] pos_inicial_in;
     wire      pwm_out;
     wire[1:0] pos_out;
 
 circuito_pwm circuito_pwm (
     .clock(clock_in),
-    .reset(reset_in),
+    .zera(reset_in),
+    .set_pos(),
     .direita(direita_in),
     .esquerda(esquerda_in),
+    .pos_inicial(),
     .pwm(pwm_out),
     .pos(pos_out),
     .db_pwm()
@@ -34,6 +38,8 @@ initial begin
         reset_in   = 0;
         direita_in = 0;
         esquerda_in = 0;
+        pos_inicial_in = 2'b00;
+        set_pos_in = 0;
 
         // Reset
         @(negedge clock_in); 

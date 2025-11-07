@@ -21,9 +21,11 @@ module circuito_pwm #(    // valores default
     parameter largura_011   = 93750    //157,5 dgr
 ) (
     input        clock,
-    input        reset,
+    input        set_pos,
+    input        zera,
     input        direita,
     input        esquerda,
+    input        [1:0] pos_inicial,
     output wire  pwm,
     output wire  [1:0] pos,
     output wire  db_pwm
@@ -54,18 +56,19 @@ edge_detector esquerda_detector (
 
 contador_vai_vem #(.M(4), .N(2)) contador_vai_vem (
     .clock(clock),
-    .zera_as(reset),
-    .zera_s(),
+    .zera_as(zera),
+    .set_pos(set_pos),
     .vai(w_dir_det),
     .vem(w_esq_det),
+    .D(pos_inicial),
     .Q(w_pos),
     .fim(),
     .meio()
 );
 
 
-always @(posedge clock or posedge reset) begin
-    if (reset) begin
+always @(posedge clock or posedge zera) begin
+    if (zera) begin
         contagem <= 0;
         s_pwm <= 0;
         largura_pwm <= largura_000; // Valor inicial da largura do pulso

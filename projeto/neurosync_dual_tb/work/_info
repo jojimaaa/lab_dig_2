@@ -1,0 +1,1003 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb
+vbinaryTObcd
+Z0 !s110 1762532307
+!i10b 1
+!s100 ULXYYL`K0Y?cV^Ko9ZEz^2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IF6k<zNAH3]LPBF7]J0n2_1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Enzo/Documents/PCS3645/projeto/neurosync_dual_tb
+w1762387684
+8C:/Users/Enzo/Documents/PCS3645/projeto/binaryTObcd.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/binaryTObcd.v
+!i122 1233
+L0 1 49
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1762532307.000000
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/binaryTObcd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/binaryTObcd.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+nbinary@t@obcd
+vcircuito_pwm
+R0
+!i10b 1
+!s100 hQ7SR4?gcIVK?nO?EL9:Q1
+R1
+I;l:@[cBQEg^1cEFmoXS]60
+R2
+R3
+w1762526391
+8C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v
+!i122 1234
+L0 16 83
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v|
+!i113 1
+R6
+R7
+vcircuito_pwm_tb
+R0
+!i10b 1
+!s100 =FCZ=NCeCK1?>n9R:VVL`1
+R1
+IJPe8@g=VR?c7<9:SF9GdT0
+R2
+R3
+w1762526476
+8C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v
+!i122 1235
+Z8 L0 3 108
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm_tb.v|
+!i113 1
+R6
+R7
+vcomparador_faixa
+R0
+!i10b 1
+!s100 V@WhSZ;EbXkfKWW`2i:OQ0
+R1
+IJ0NhZmhb85<8[76UF36G?0
+R2
+R3
+Z9 w1762239848
+8C:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v
+!i122 1236
+L0 1 9
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/comparador_faixa.v|
+!i113 1
+R6
+R7
+vcontador_bcd_3digitos
+R0
+!i10b 1
+!s100 zW<M=cLMB`1^LR818CPz@1
+R1
+I6ifL6PP@6YWXZ031`]P1C2
+R2
+R3
+R9
+8C:/Users/Enzo/Documents/PCS3645/projeto/contador_bcd_3digitos.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/contador_bcd_3digitos.v
+!i122 1237
+L0 14 45
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_bcd_3digitos.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_bcd_3digitos.v|
+!i113 1
+R6
+R7
+vcontador_cm
+R0
+!i10b 1
+!s100 b6D0JoTDlG5A?L@JkZ4VQ3
+R1
+IXIA?@h4C>joo_Rn2G@Zc?0
+R2
+R3
+R9
+8C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/contador_cm.v
+!i122 1238
+L0 15 53
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm.v|
+!i113 1
+R6
+R7
+vcontador_cm_fd
+Z10 !s110 1762532308
+!i10b 1
+!s100 @3cAo8S<DolV5@b:PSKZI3
+R1
+I^2=aTcha84>9aBO2m4jOC0
+R2
+R3
+R9
+8C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_fd.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_fd.v
+!i122 1239
+L0 15 43
+R4
+r1
+!s85 0
+31
+Z11 !s108 1762532308.000000
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_fd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_fd.v|
+!i113 1
+R6
+R7
+vcontador_cm_uc
+R10
+!i10b 1
+!s100 Sa4IT=locOZAW:LRET<FW2
+R1
+IWReL730jKo@g_HPMkg@g>0
+R2
+R3
+R9
+8C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_uc.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_uc.v
+!i122 1240
+L0 16 64
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_uc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_uc.v|
+!i113 1
+R6
+R7
+vcontador_m
+R10
+!i10b 1
+!s100 @kCDOd=RFSGKbO:9]n[;j2
+R1
+Ikn[V0hHYNcgPFQP8_1cbH3
+R2
+R3
+w1762248366
+8C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v
+!i122 1241
+Z12 L0 16 39
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v|
+!i113 1
+R6
+R7
+vcontador_m_trava
+R10
+!i10b 1
+!s100 0mFTe=d2>9C_Yo3<FZ33]0
+R1
+ImeZ7P=ZGJXkXHUWTSoOe83
+R2
+R3
+w1762248402
+8C:/Users/Enzo/Documents/PCS3645/projeto/contador_m_trava.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/contador_m_trava.v
+!i122 1242
+R12
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_m_trava.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_m_trava.v|
+!i113 1
+R6
+R7
+vcontador_vai_vem
+R10
+!i10b 1
+!s100 0Nm;iDNl7dMfO9@zQ8<ba0
+R1
+I7@A>?5@SAzVZjeTFU`Ya71
+R2
+R3
+w1762526185
+8C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v
+!i122 1243
+L0 1 47
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v|
+!i113 1
+R6
+R7
+vdeslocador_n
+R10
+!i10b 1
+!s100 ekUiQZ6Ef_XO5Z3[98`6X2
+R1
+IU8K[<=WFG^_h=WO>WPJf[1
+R2
+R3
+R9
+8C:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v
+!i122 1244
+L0 15 31
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v|
+!i113 1
+R6
+R7
+vedge_detector
+R10
+!i10b 1
+!s100 AEDYJD37[Ybb^@2QMVV>20
+R1
+IE`eWC3ezFgeU^K=`J@CD@1
+R2
+R3
+w1762249684
+8C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v
+!i122 1245
+L0 19 23
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v|
+!i113 1
+R6
+R7
+vgerador_pulso
+Z13 !s110 1762532309
+!i10b 1
+!s100 8AoYG=9jUP9YV[a7R[WFO1
+R1
+IC4l]48zFl`>8GLVcAb<o@1
+R2
+R3
+w1762249686
+8C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v
+!i122 1246
+L0 14 69
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/gerador_pulso.v|
+!i113 1
+R6
+R7
+vhexa7seg
+R13
+!i10b 1
+!s100 :20kA`7`L0gDF2=JFj`=l2
+R1
+I;@3j_TkEN4eLS:8GlVMXE1
+R2
+R3
+w1756301818
+8C:/Users/Enzo/Documents/PCS3645/projeto/hexa7seg.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/hexa7seg.v
+!i122 1247
+L0 22 38
+R4
+r1
+!s85 0
+31
+Z14 !s108 1762532309.000000
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/hexa7seg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/hexa7seg.v|
+!i113 1
+R6
+R7
+vinterface_hcsr04
+R13
+!i10b 1
+!s100 Wc7B8HWfe46QPkB9<GnMF2
+R1
+IjL1LB6`kQ9SAEGM?zZd`V0
+R2
+R3
+w1762245310
+8C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04.v
+!i122 1248
+L0 13 56
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04.v|
+!i113 1
+R6
+R7
+vinterface_hcsr04_fd
+R13
+!i10b 1
+!s100 koazcaGk?54aM3diH@MzK2
+R1
+IeECJI>Xg:;78MTeTif78U2
+R2
+R3
+w1762464742
+8C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04_fd.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04_fd.v
+!i122 1249
+L0 14 67
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04_fd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04_fd.v|
+!i113 1
+R6
+R7
+vinterface_hcsr04_uc
+R13
+!i10b 1
+!s100 Q`VgeDOnV2mcFdIGho1Y?2
+R1
+Ik`K:bQ4?3DAbF7Aj>RBFW2
+R2
+R3
+w1762245342
+8C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04_uc.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04_uc.v
+!i122 1250
+L0 14 88
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04_uc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/interface_hcsr04_uc.v|
+!i113 1
+R6
+R7
+vmedidor_faixa
+R13
+!i10b 1
+!s100 TTIG0dH@F^gBL^l@P63123
+R1
+IW?AazbYD8M1]CEV[DGTOV3
+R2
+R3
+w1762488581
+8C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa.v
+!i122 1251
+L0 1 85
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa.v|
+!i113 1
+R6
+R7
+vmedidor_faixa_fd
+R13
+!i10b 1
+!s100 nkC`A12X@IolTh1Z3bZNM3
+R1
+IkYkZ01gnTm[dnY?gLka]U3
+R2
+R3
+w1762488332
+8C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_fd.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_fd.v
+!i122 1252
+L0 1 178
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_fd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_fd.v|
+!i113 1
+R6
+R7
+vmedidor_faixa_tb
+Z15 !s110 1762532310
+!i10b 1
+!s100 UX[VWa^NlbZX^Sjj^g_Y^0
+R1
+IYRE5QB>d:8`g6inUi0?2<3
+R2
+R3
+w1762482431
+8C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_tb.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_tb.v
+!i122 1253
+L0 18 148
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_tb.v|
+!i113 1
+R6
+R7
+vmedidor_faixa_teste
+R15
+!i10b 1
+!s100 llQAjNZge`lz3TAHPdzMb3
+R1
+IHiE<R@zI;U]jZVCDzY9=83
+R2
+R3
+w1762380548
+8C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_teste.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_teste.v
+!i122 1254
+Z16 L0 1 46
+R4
+r1
+!s85 0
+31
+Z17 !s108 1762532310.000000
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_teste.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_teste.v|
+!i113 1
+R6
+R7
+vmedidor_faixa_uc
+R15
+!i10b 1
+!s100 3?HYS9FRnQfnc`PH5`TN?0
+R1
+I62n6_NS:Co;o^PE3[:7zF3
+R2
+R3
+w1762488647
+8C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_uc.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_uc.v
+!i122 1255
+L0 1 107
+R4
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_uc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_uc.v|
+!i113 1
+R6
+R7
+vmem0
+R15
+!i10b 1
+!s100 0_>ae0hi3V>5hjzO>hDH?0
+R1
+IjmSP7emg=5e]o305VMF9h2
+R2
+R3
+w1762530446
+8C:/Users/Enzo/Documents/PCS3645/projeto/mem0.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/mem0.v
+!i122 1256
+Z18 L0 1 59
+R4
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/mem0.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/mem0.v|
+!i113 1
+R6
+R7
+vmem1
+R15
+!i10b 1
+!s100 j`HY<M0HhV@Xe@3[JIU_g3
+R1
+I:>8j2ZZ4d76RcW`7RNib93
+R2
+R3
+w1762530454
+Z19 8C:/Users/Enzo/Documents/PCS3645/projeto/mem1.v
+Z20 FC:/Users/Enzo/Documents/PCS3645/projeto/mem1.v
+!i122 1257
+R18
+R4
+r1
+!s85 0
+31
+R17
+Z21 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/mem1.v|
+Z22 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/mem1.v|
+!i113 1
+R6
+R7
+vmem2
+R15
+!i10b 1
+!s100 az9bE:MUh2R`HCf6iU0>>2
+R1
+IF[eKl]2YDW;<LRk[Sh^>Q0
+R2
+R3
+w1762529653
+Z23 8C:/Users/Enzo/Documents/PCS3645/projeto/mem2.v
+Z24 FC:/Users/Enzo/Documents/PCS3645/projeto/mem2.v
+!i122 1258
+R16
+R4
+r1
+!s85 0
+31
+R17
+Z25 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/mem2.v|
+Z26 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/mem2.v|
+!i113 1
+R6
+R7
+vmem3
+R15
+!i10b 1
+!s100 ACWKe9;bTW7>JN:a@;JF41
+R1
+Ia7[chM6gm]izZ6E<SZ:HA0
+R2
+R3
+w1762529660
+Z27 8C:/Users/Enzo/Documents/PCS3645/projeto/mem3.v
+Z28 FC:/Users/Enzo/Documents/PCS3645/projeto/mem3.v
+!i122 1259
+R16
+R4
+r1
+!s85 0
+31
+R17
+Z29 !s107 C:/Users/Enzo/Documents/PCS3645/projeto/mem3.v|
+Z30 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/mem3.v|
+!i113 1
+R6
+R7
+vmemo0
+Z31 !s110 1762524462
+!i10b 1
+!s100 mUjCGQPJ2KoSmlHLcdMoT3
+R1
+IP8`^YnkBz5=J5aKS`4WO41
+R2
+R3
+w1762522005
+R19
+R20
+!i122 62
+L0 1 58
+R4
+r1
+!s85 0
+31
+Z32 !s108 1762524462.000000
+R21
+R22
+!i113 1
+R6
+R7
+vmemo2
+R31
+!i10b 1
+!s100 UJ@eH`a_?SMQ>gzgZ5OUR1
+R1
+IWDER4l1m6Jz;gT[Y[A:C>0
+R2
+R3
+w1762466865
+R23
+R24
+!i122 63
+Z33 L0 1 45
+R4
+r1
+!s85 0
+31
+R32
+R25
+R26
+!i113 1
+R6
+R7
+vmemo3
+R31
+!i10b 1
+!s100 Nh<]@U9HK8ZaVVDNBjZl[1
+R1
+I^iQ6V9WA9ZND?E7N@Y^562
+R2
+R3
+w1762466876
+R27
+R28
+!i122 64
+R33
+R4
+r1
+!s85 0
+31
+R32
+R29
+R30
+!i113 1
+R6
+R7
+vmux_4x1
+Z34 !s110 1762532311
+!i10b 1
+!s100 oYLVJHcjNNf^HJMGdb1e11
+R1
+IW82zK2WoZZWhLgB3X8D<K3
+R2
+R3
+R9
+8C:/Users/Enzo/Documents/PCS3645/projeto/mux_4x1.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/mux_4x1.v
+!i122 1260
+L0 17 18
+R4
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/mux_4x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/mux_4x1.v|
+!i113 1
+R6
+R7
+vneurosync_controller_dual
+R34
+!i10b 1
+!s100 FhAVeJKl@Zh3dEZdUB5z91
+R1
+IF2Hh?_lajSWg3Lo]07?L31
+R2
+R3
+w1762530825
+8C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual.v
+!i122 1261
+L0 1 160
+R4
+r1
+!s85 0
+31
+Z35 !s108 1762532311.000000
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual.v|
+!i113 1
+R6
+R7
+vneurosync_controller_dual_fd
+R34
+!i10b 1
+!s100 [d4:6`cGIFKo3oUJIC:Od2
+R1
+I=nzZc_h9CLGE0IGF8HYPV1
+R2
+R3
+w1762530760
+8C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_fd.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_fd.v
+!i122 1262
+L0 1 239
+R4
+r1
+!s85 0
+31
+R35
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_fd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_fd.v|
+!i113 1
+R6
+R7
+vneurosync_controller_dual_tb
+R34
+!i10b 1
+!s100 V]TnelaMjPPGC:5?4>4kb3
+R1
+IVcloKcFfBjMVDfSiRF<8c0
+R2
+R3
+w1762532299
+8C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_tb.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_tb.v
+!i122 1263
+L0 2 301
+R4
+r1
+!s85 0
+31
+R35
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_tb.v|
+!i113 1
+R6
+R7
+vneurosync_controller_dual_uc
+R34
+!i10b 1
+!s100 zWR11NjZ?7S622zlc;[=J2
+R1
+IhUnW04LfmXkDzggTj=`3I0
+R2
+R3
+w1762531118
+8C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_uc.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_uc.v
+!i122 1264
+L0 1 74
+R4
+r1
+!s85 0
+31
+R35
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_uc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_uc.v|
+!i113 1
+R6
+R7
+vplay_analyser
+R34
+!i10b 1
+!s100 B>mPjFnT^ROl^llhk2jaP3
+R1
+I^0^;E<cGcZX4aMS>I^AXc1
+R2
+R3
+w1762431867
+8C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/play_analyser.v
+!i122 1265
+L0 1 142
+R4
+r1
+!s85 0
+31
+R35
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser.v|
+!i113 1
+R6
+R7
+vplay_analyser_fd
+R34
+!i10b 1
+!s100 ?;;P71HdTomfZSa`gC8TW0
+R1
+IdO9B<_51RAQ]QcD>LEIFo2
+R2
+R3
+w1762460913
+8C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v
+!i122 1266
+L0 1 114
+R4
+r1
+!s85 0
+31
+R35
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v|
+!i113 1
+R6
+R7
+vplay_analyser_tb
+Z36 !s110 1762532312
+!i10b 1
+!s100 V1QRS2?kj[G6KdT:l=QX72
+R1
+Ih@Q@TnE<6BV17?`Ik5l^Q1
+R2
+R3
+w1762461116
+8C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v
+!i122 1267
+R8
+R4
+r1
+!s85 0
+31
+R35
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v|
+!i113 1
+R6
+R7
+vplay_analyser_uc
+R36
+!i10b 1
+!s100 Af^TV=LPVOX;oIj;[YP:j1
+R1
+I<DdR;Fh1;z4:fAR5YRXKO1
+R2
+R3
+w1762434685
+8C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_uc.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_uc.v
+!i122 1268
+L0 1 62
+R4
+r1
+!s85 0
+31
+Z37 !s108 1762532312.000000
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_uc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_uc.v|
+!i113 1
+R6
+R7
+vregistrador_n
+R36
+!i10b 1
+!s100 c33QzNOWDW9lh[K4:od@l2
+R1
+IHgiSIGZPEgM]of6Sm`nN73
+R2
+R3
+R9
+8C:/Users/Enzo/Documents/PCS3645/projeto/registrador_n.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/registrador_n.v
+!i122 1269
+L0 17 20
+R4
+r1
+!s85 0
+31
+R37
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/registrador_n.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/registrador_n.v|
+!i113 1
+R6
+R7
+vtx_serial_7E1
+R36
+!i10b 1
+!s100 ^;E>aJFR:oO3F=EShFgkD2
+R1
+IMDVl^3g?cm51Cl>]CdPUK3
+R2
+R3
+w1762524260
+8C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v
+!i122 1270
+L0 1 83
+R4
+r1
+!s85 0
+31
+R37
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v|
+!i113 1
+R6
+R7
+ntx_serial_7@e1
+vtx_serial_7E1_fd
+R36
+!i10b 1
+!s100 KIA5JXQXQBAX3Q:]:S>F[1
+R1
+I:F?Uj`WKF^d@M<ZdcDG1l2
+R2
+R3
+R9
+8C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v
+!i122 1271
+R18
+R4
+r1
+!s85 0
+31
+R37
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v|
+!i113 1
+R6
+R7
+ntx_serial_7@e1_fd
+vtx_serial_uc
+R36
+!i10b 1
+!s100 cQPFd=hIOZm6zCKDVFA?=3
+R1
+IG790a<X:f:WdE5cCSd>BJ3
+R2
+R3
+R9
+8C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_uc.v
+FC:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_uc.v
+!i122 1272
+L0 17 64
+R4
+r1
+!s85 0
+31
+R37
+!s107 C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_uc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_uc.v|
+!i113 1
+R6
+R7
