@@ -1,5 +1,6 @@
 module medidor_faixa_fd(
     input clock,
+    input reset,
     input echo,
     input mensurar,
     input conta_prox_char,
@@ -30,6 +31,7 @@ module medidor_faixa_fd(
 wire [1:0] sel_char, pos_addr, sel_char_a;
 wire [11:0] w_medida, w_medida_reg;
 wire w_dentro, w_fim_3sec, w_acertou_reg;
+wire w_zera;
 
 wire [6:0] centena_ascii, dezena_ascii, unidade_ascii, w_dados_ascii, w_medida_ascii, w_acertou_ascii;
 wire [6:0] ascii_hash = 7'b0100011;
@@ -45,9 +47,11 @@ assign fim_3sec = w_fim_3sec;
 
 assign dentro = w_dentro;
 
+assign w_zera = (zera == 1'b1) || (reset == 1'b1);
+
 interface_hcsr04 interface_hcsr04 (
     .clock(clock),
-    .reset(zera),
+    .reset(w_zera),
     .medir(mensurar),
     .echo(echo),
     .trigger(trigger),
@@ -58,7 +62,7 @@ interface_hcsr04 interface_hcsr04 (
 // //3s
 // contador_m_trava #(.M(150_000_000), .N(28)) contador_3sec (
 //     .clock(clock),
-//     .zera_as(zera),
+//     .zera_as(w_zera),
 //     .zera_s(~w_dentro),
 //     .conta(w_dentro),
 //     .Q(),
@@ -69,7 +73,7 @@ interface_hcsr04 interface_hcsr04 (
 // //100ms
 // contador_m #(.M(5_000_000), .N(24)) contador_time (
 //     .clock(clock),
-//     .zera_as(),
+//     .zera_as(w_zera),
 //     .zera_s(zera_time),
 //     .conta(conta_time),
 //     .Q(),
@@ -80,7 +84,7 @@ interface_hcsr04 interface_hcsr04 (
 // 20ms p/ teste
 contador_m_trava #(.M(1_000_000), .N(28)) contador_3sec (
     .clock(clock),
-    .zera_as(zera),
+    .zera_as(w_zera),
     .zera_s(~w_dentro),
     .conta(w_dentro),
     .Q(),
@@ -92,7 +96,7 @@ contador_m_trava #(.M(1_000_000), .N(28)) contador_3sec (
 // 200us para teste
 contador_m #(.M(10000), .N(24)) contador_time (
     .clock(clock),
-    .zera_as(),
+    .zera_as(w_zera),
     .zera_s(zera_time),
     .conta(conta_time),
     .Q(),
@@ -109,7 +113,7 @@ comparador_faixa comparador_faixa (
 
 tx_serial_7E1 tx_serial_7E1 (
     .clock           (clock),
-    .reset           (zera),
+    .reset           (w_zera),
     .partida         (partida_tx),
     .dados_ascii     (w_dados_ascii),
     .saida_serial    (saida_serial), // saidas
@@ -118,7 +122,7 @@ tx_serial_7E1 tx_serial_7E1 (
 
 contador_m #(.M(4), .N(3)) contador_char (
     .clock(clock),
-    .zera_as(),
+    .zera_as(w_zera),
     .zera_s(zera_char),
     .conta(conta_prox_char),
     .Q(sel_char),
@@ -128,7 +132,7 @@ contador_m #(.M(4), .N(3)) contador_char (
 
 contador_m #(.M(4), .N(3)) contador_char_a (
     .clock(clock),
-    .zera_as(),
+    .zera_as(w_zera),
     .zera_s(zera_char_a),
     .conta(conta_prox_char_a),
     .Q(sel_char_a),
@@ -159,7 +163,7 @@ mux_4x1 #(.BITS(7)) mux_char_a(
 
 registrador_n #(.N(1)) reg_acertou (
     .clock  (clock    ),
-    .clear  (zera),
+    .clear  (w_zera),
     .enable (registra_acertou),
     .D      (1'b1 ),
     .Q      (w_acertou_reg)
@@ -169,7 +173,7 @@ registrador_n #(
     .N(12)
 ) registrador_medida (
     .clock  (clock    ),
-    .clear  (zera),
+    .clear  (w_zera),
     .enable (pronto_medida),
     .D      (w_medida ),
     .Q      (w_medida_reg)

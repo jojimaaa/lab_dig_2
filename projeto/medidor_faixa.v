@@ -1,6 +1,7 @@
 module medidor_faixa(
     input wire clock,
     input wire medir,
+    input wire reset,
     input wire [11:0] upperL,
     input wire [11:0] lowerL,
     input wire echo,
@@ -33,6 +34,7 @@ wire w_fim_3sec,
 medidor_faixa_uc medidor_faixa_uc (
     .clock(clock),
     .medir(medir),
+    .reset(reset),
     .fim_3sec(w_fim_3sec),
     .is_ultimo_char(w_is_ultimo_char),
     .is_ultimo_char_a(w_is_ultimo_char_a),
@@ -56,6 +58,7 @@ medidor_faixa_uc medidor_faixa_uc (
 
 medidor_faixa_fd medidor_faixa_fd (
     .clock(clock),
+    .reset(reset),
     .echo(echo),
     .mensurar(w_mensurar),
     .conta_prox_char(w_conta_prox_char),

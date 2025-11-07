@@ -1,4 +1,4 @@
-module neurosync_controller_dual_fd (
+module neurosync_controller_single_fd (
     input  clock,
     input  reset,
     input  zera,
@@ -28,8 +28,8 @@ module neurosync_controller_dual_fd (
     output wire [6:0] hex0,
     output wire [6:0] hex1,
     output wire [6:0] hex2,
-    output serial1,
-    output serial2
+    output pronto_tx,
+    output serial
 );
 
     wire [11:0] s_medida;
@@ -53,6 +53,10 @@ module neurosync_controller_dual_fd (
     wire [11:0] lim_sup_mem;
     wire [27:0] expected_mem;
     wire w_zera_pwm;
+
+    wire w_serial_faixa, w_serial_play;
+
+    assign serial = (medir == 1'b1) ? w_serial_faixa : w_serial_play;
 
     assign w_zera_pwm = zera || zera_prep_jogo || reset;
     assign opcode_mem      = w_memory_out[59:58];
@@ -131,7 +135,7 @@ module neurosync_controller_dual_fd (
 
         .trigger(trigger),
         .acertou(acertou_faixa),
-        .saida_serial(serial2),
+        .saida_serial(w_serial_faixa),
         .db_medida(s_medida),
         .db_estado(),
         .dentro()
@@ -159,7 +163,7 @@ module neurosync_controller_dual_fd (
         .direita(direita),
         .esquerda(esquerda),
         .expected(expected_mem),
-        .serial(serial1),
+        .serial(w_serial_play),
         .pronto(pronto_play),
         .acertou(acertou_play),
         .resposta(w_resposta),

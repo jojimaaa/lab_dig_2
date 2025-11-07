@@ -1,4 +1,4 @@
-module neurosync_controller_dual_uc(
+module neurosync_controller_single_uc(
     input       clock,
     input       reset,
     input       jogar_det,

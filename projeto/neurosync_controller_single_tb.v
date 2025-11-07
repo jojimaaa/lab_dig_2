@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-module neurosync_controller_dual_tb();
+module neurosync_controller_single_tb();
 
     reg clock_in;
     reg reset_in;
@@ -17,11 +17,10 @@ module neurosync_controller_dual_tb();
     wire [6:0] hex0_out;
     wire [6:0] hex1_out;
     wire [6:0] hex2_out;
-    wire serial1_out;
-    wire serial2_out;
+    wire serial_out;
 
     // Componente a ser testado (Device Under Test -- DUT)
-    neurosync_controller_dual neurosync_controller_dual (
+    neurosync_controller_single neurosync_controller_single (
         .clock(clock_in),
         .reset(reset_in),
         .jogar(jogar_in),
@@ -37,8 +36,7 @@ module neurosync_controller_dual_tb();
         .hex0(hex0_out),
         .hex1(hex1_out),
         .hex2(hex2_out),
-        .serial1(serial1_out),
-        .serial2(serial2_out)
+        .serial(serial_out)
     );
 
     // Configurações do clock

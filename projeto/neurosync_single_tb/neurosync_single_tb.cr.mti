@@ -19,12 +19,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	circuito_pwm_tb
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_tb.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_tb.v
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_single_fd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_single_fd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module neurosync_controller_dual_tb
+-- Compiling module neurosync_controller_single_fd
 
 Top level modules:
-	neurosync_controller_dual_tb
+	neurosync_controller_single_fd
 
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_uc.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_uc.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -54,19 +54,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	interface_hcsr04
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module circuito_pwm
-
-Top level modules:
-	circuito_pwm
-
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_fd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module play_analyser_fd
 
 Top level modules:
 	play_analyser_fd
+
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/circuito_pwm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module circuito_pwm
+
+Top level modules:
+	circuito_pwm
 
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/deslocador_n.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -89,13 +89,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	gerador_pulso
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module contador_m
-
-Top level modules:
-	contador_m
-
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/edge_detector.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module edge_detector
@@ -103,12 +96,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	edge_detector
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_fd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_fd.v
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_m.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module neurosync_controller_dual_fd
+-- Compiling module contador_m
 
 Top level modules:
-	neurosync_controller_dual_fd
+	contador_m
 
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -116,13 +109,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	tx_serial_7E1
-
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module contador_vai_vem
-
-Top level modules:
-	contador_vai_vem
 
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/tx_serial_7E1_fd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -145,6 +131,20 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	comparador_faixa
 
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_vai_vem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_vai_vem
+
+Top level modules:
+	contador_vai_vem
+
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_single_uc.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_single_uc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module neurosync_controller_single_uc
+
+Top level modules:
+	neurosync_controller_single_uc
+
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_tb.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module medidor_faixa_tb
@@ -165,6 +165,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	contador_cm
+
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_single.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_single.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module neurosync_controller_single
+
+Top level modules:
+	neurosync_controller_single
 
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_fd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/contador_cm_fd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -208,13 +215,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	hexa7seg
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_uc.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual_uc.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module neurosync_controller_dual_uc
-
-Top level modules:
-	neurosync_controller_dual_uc
-
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_fd.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/medidor_faixa_fd.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module medidor_faixa_fd
@@ -229,12 +229,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	interface_hcsr04_fd
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_dual.v
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_single_tb.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/neurosync_controller_single_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module neurosync_controller_dual
+-- Compiling module neurosync_controller_single_tb
 
 Top level modules:
-	neurosync_controller_dual
+	neurosync_controller_single_tb
 
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/mem0.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/mem0.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -264,18 +264,18 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	contador_cm_uc
 
-} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/mem2.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/mem2.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module mem2
-
-Top level modules:
-	mem2
-
 } {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/play_analyser_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module play_analyser_tb
 
 Top level modules:
 	play_analyser_tb
+
+} {} {}} C:/Users/Enzo/Documents/PCS3645/projeto/mem2.v {1 {vlog -work work -stats=none C:/Users/Enzo/Documents/PCS3645/projeto/mem2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mem2
+
+Top level modules:
+	mem2
 
 } {} {}}
