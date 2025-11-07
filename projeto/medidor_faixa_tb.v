@@ -59,7 +59,7 @@ module medidor_faixa_tb;
     // Largura do pulso
     reg [31:0] larguraPulso; // Usando 32 bits para acomodar tempos maiores
 
-    reg [31:0] esperaEntreMedidas = 450_000; //(20,1us)
+    reg [31:0] esperaEntreMedidas = 10000; // para o teste de 20us
 
     // Geração dos sinais de entrada (estímulos)
     initial begin
@@ -97,27 +97,26 @@ module medidor_faixa_tb;
         @(negedge clock_in);
         medir_in = 1;
             
-        // 3) Espera por 400us (tempo entre trigger e echo)
-        #(400_000); // 400 us
+        wait (trigger_out == 1'b1);
 
         // 4) Gera pulso de echo
         echo_in = 1;
         #(larguraPulso);
         echo_in = 0;
 
-        #(esperaEntreMedidas);
+        wait (trigger_out == 1'b1);
 
         echo_in = 1;
         #(larguraPulso);
         echo_in = 0;
 
-        #(esperaEntreMedidas);
+        wait (trigger_out == 1'b1);
 
         echo_in = 1;
         #(larguraPulso);
         echo_in = 0;
 
-        #(esperaEntreMedidas);
+        wait (trigger_out == 1'b1);
 
         echo_in = 1;
         #(larguraPulso);
@@ -128,124 +127,34 @@ module medidor_faixa_tb;
         $display("Caso de teste %0d: %0dus", 4, casos_teste[3]);
         larguraPulso = casos_teste[3]*1000; // 1us=1000
 
-        #(esperaEntreMedidas);
+        wait (trigger_out == 1'b1);
         echo_in = 1;
         #(larguraPulso);
         echo_in = 0;
 
-        #(esperaEntreMedidas);
+        wait (trigger_out == 1'b1);
         echo_in = 1;
         #(larguraPulso);
         echo_in = 0;
         
-        #(esperaEntreMedidas);
+        wait (trigger_out == 1'b1);
         echo_in = 1;
         #(larguraPulso);
         echo_in = 0;
         
-        #(esperaEntreMedidas);
+        wait (trigger_out == 1'b1);
         echo_in = 1;
         #(larguraPulso);
         echo_in = 0;
         
-        #(esperaEntreMedidas);
+        wait (trigger_out == 1'b1);
         echo_in = 1;
         #(larguraPulso);
         echo_in = 0;
-        #(esperaEntreMedidas);
+        wait (trigger_out == 1'b1);
         echo_in = 1;
         #(larguraPulso);
         echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        
-        #(esperaEntreMedidas);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
-        #(esperaEntreMedidas);
     
         // Fim da simulação
         $display("Fim das simulacoes");

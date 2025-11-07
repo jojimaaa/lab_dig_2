@@ -57,14 +57,14 @@ module interface_hcsr04_fd (
     );
 	 
 	 contador_m #(.M(50_000_000), .N(28)) contador_1sec (
-    .clock(clock),
-    .zera_as(),
-    .zera_s(zera_timeout),
-    .conta(conta_timeout),
-    .Q(),
-    .fim(timeout),
-    .meio()
-);
+        .clock(clock),
+        .zera_as(),
+        .zera_s(zera_timeout),
+        .conta(conta_timeout),
+        .Q(),
+        .fim(timeout),
+        .meio()
+    );
 
     // (U3) registrador
     registrador_n #(
