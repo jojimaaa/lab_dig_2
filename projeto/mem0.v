@@ -10,7 +10,7 @@ module mem0 (
             01 = botão + servo
             10 = servo
             11 = sensor
-        
+
         leds = 4bit         - qual led acenderá
         pos_inicial = 2bit  - posição inicial do servo
         lim_inf     = 12bit - Limite inferior do servo (3xBDC)

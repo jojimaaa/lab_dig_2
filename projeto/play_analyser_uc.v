@@ -42,7 +42,7 @@ module play_analyser_uc(
             envia_partida:      Eprox = aguarda_tx;
             aguarda_tx:         Eprox = pronto_tx ? (is_ultimo_char ? pronto_state : proximo_char) : aguarda_tx;
             proximo_char:       Eprox = envia_partida;
-            pronto:             Eprox = inicial;
+            pronto_state:       Eprox = inicial;
             default:            Eprox = inicial;
         endcase
     end
