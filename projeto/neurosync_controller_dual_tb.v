@@ -77,29 +77,29 @@ module neurosync_controller_dual_tb();
         // Reset
         #(2*clockPeriod);
         reset_in = 1;
-        #(2_000); // 2 us
+        #(11_000_000); // 2 us
         reset_in = 0;
 
         // Espera de 400us
         #(400_000); // 400 us
 
         jogar_in = 1;
-        #(2000);
+        #(11_000_000);
         jogar_in = 0;
         #(5*400_000); // 400 us
 
         direita_in = 1;
-        #(2000);
+        #(11_000_000);
         direita_in = 0;
         #(2*400_000); // 400 us
 
         esquerda_in = 1;
-        #(2000);
+        #(11_000_000);
         esquerda_in = 0;
         #(2*400_000); // 400 us
 
         confirma_in = 1;
-        #(2000);
+        #(11_000_000);
         confirma_in = 0;
         #(2*400_000); // 400 us
 
@@ -107,127 +107,128 @@ module neurosync_controller_dual_tb();
 
         // Aperta B (errado)
         botoes_in = 4'b0010;
-        #(2000)
+        #(11_000_000)
         botoes_in = 4'b0000;
         #(2*400_000); // 400 us
 
         // Aperta A (Certo)
         botoes_in = 4'b0001;
-        #(2000)
-        botoes_in = 4'b0001;
+        #(11_000_000)
+        botoes_in = 4'b0000;
         #(2*400_000); // 400 us
 
         confirma_in = 1;
-        #(2000);
+        #(11_000_000);
         confirma_in = 0;
         #(2*400_000); // 400 us
 
         // ------------------------------------------------ B1
 
         esquerda_in = 1;
-        #(2000);
+        #(11_000_000);
         esquerda_in = 0;
-        #(2*400_000); // 400 us
+        #(4_100_000);
 
         esquerda_in = 1;
-        #(2000);
+        #(11_000_000);
         esquerda_in = 0;
         #(2*400_000); // 400 us
 
         // Aperta B (certo)
         botoes_in = 4'b0010;
-        #(2000)
+        #(11_000_000)
         botoes_in = 4'b0000;
         #(2*400_000); // 400 us
 
         confirma_in = 1;
-        #(2000);
+        #(11_000_000);
         confirma_in = 0;
         #(2*400_000); // 400 us
 
         // ------------------------------------------------ C2
 
         direita_in = 1;
-        #(2000);
+        #(11_000_000);
         direita_in = 0;
         #(2*400_000); // 400 us
 
         // Aperta C (certo)
         botoes_in = 4'b0100;
-        #(2000)
+        #(11_000_000)
         botoes_in = 4'b0000;
         #(2*400_000); // 400 us
 
         confirma_in = 1;
-        #(2000);
+        #(11_000_000);
         confirma_in = 0;
         #(2*400_000); // 400 us
 
         // ------------------------------------------------ D3
 
         direita_in = 1;
-        #(2000);
+        #(11_000_000);
         direita_in = 0;
-        #(2*400_000); // 400 us
+        #(4_100_000);
 
         direita_in = 1;
-        #(2000);
+        #(11_000_000);
         direita_in = 0;
-        #(2*400_000); // 400 us
+        #(4_100_000);
 
         direita_in = 1;
-        #(2000);
+        #(11_000_000);
         direita_in = 0;
         #(2*400_000); // 400 us
 
         // Aperta D (certo)
         botoes_in = 4'b1000;
-        #(2000)
+        #(11_000_000)
         botoes_in = 4'b0000;
         #(2*400_000); // 400 us
 
         confirma_in = 1;
-        #(2000);
+        #(11_000_000);
         confirma_in = 0;
         #(2*400_000); // 400 us
 
         // ------------------------------------------------ Y2
 
         direita_in = 1;
-        #(2000);
+        #(11_000_000);
         direita_in = 0;
-        #(2*400_000); // 400 us
+        #(4_100_000);
 
         direita_in = 1;
-        #(2000);
+        #(11_000_000);
         direita_in = 0;
         #(2*400_000); // 400 us
 
         confirma_in = 1;
-        #(2000);
+        #(11_000_000);
         confirma_in = 0;
-        #(2*400_000); // 400 us
+        #(4_100_000);
 
         confirma_in = 1;
-        #(2000);
+        #(11_000_000);
         confirma_in = 0;
         #(2*400_000); // 400 us
 
         // ------------------------------------------------ Y1
 
         direita_in = 1;
-        #(2000);
+        #(11_000_000);
         direita_in = 0;
         #(2*400_000); // 400 us
 
         confirma_in = 1;
-        #(2000);
+        #(11_000_000);
+        confirma_in = 0;
+        #(4_100_000);
+        
+        confirma_in = 1;
+        #(11_000_000);
         confirma_in = 0;
         #(2*400_000); // 400 us
-
-        confirma_in = 1;
-        #(clockPeriod);
-        confirma_in = 0;
 
         // ------------------------------------------------ sensor
 
@@ -235,9 +236,8 @@ module neurosync_controller_dual_tb();
         larguraPulso = casos_teste[0]*1000; // 1us=1000
 
         wait (trigger_out == 1'b1);
-        echo_in = 1;
-        #(larguraPulso);
-        echo_in = 0;
+
+        //Teste do timeout
 
         wait (trigger_out == 1'b1);
         echo_in = 1;
@@ -277,7 +277,7 @@ module neurosync_controller_dual_tb();
         
         #(2*400_000); // 400 us
         confirma_in = 1;
-        #(2000);
+        #(11_000_000);
         confirma_in = 0;
         #(2*400_000); // 400 us
 
@@ -285,12 +285,12 @@ module neurosync_controller_dual_tb();
 
         // Aperta D (certo)
         botoes_in = 4'b1000;
-        #(2000)
+        #(11_000_000)
         botoes_in = 4'b0000;
         #(2*400_000); // 400 us
 
         confirma_in = 1;
-        #(2000);
+        #(11_000_000);
         confirma_in = 0;
         #(2*400_000); // 400 us
 

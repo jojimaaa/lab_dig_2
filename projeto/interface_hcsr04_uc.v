@@ -80,8 +80,8 @@ module interface_hcsr04_uc (
     always @(*) begin
         
             zera = (Eatual == preparacao);
-				zera_timeout = (Eatual == envia_trigger);
-				conta_timeout = (Eatual == espera_echo);
+            zera_timeout = (Eatual == envia_trigger);
+            conta_timeout = (Eatual == espera_echo);
             gera = (Eatual == envia_trigger);
             registra = (Eatual == armazenamento);
             pronto = (Eatual == final_medida);

@@ -26,8 +26,8 @@ module play_analyser(
          w_zera_char,
          w_conta_prox_char,
          w_partida_tx,
-         w_reg_comp,
-         w_reg_jogada;
+        //  w_reg_jogada,
+         w_reg_comp;
 
     wire [3:0] botoes_det;
 
@@ -46,18 +46,19 @@ module play_analyser(
 
     play_analyser_fd play_analyser_fd (
         .clock(clock),
-        .jogar(jogar),
-        .reset(reset),
-        .botoes(botoes),
+        .jogar(jogar_det),
+        .reset(reset_det),
+        .botoes(botoes_det),
         .pos(pos),
-        .confirma(confirma),
+        .confirma(confirma_det),
         .conta_prox_char(w_conta_prox_char),
         .zera(w_zera),
         .zera_char(w_zera_char),
-        .direita(direita),
-        .esquerda(esquerda),
+        .direita(direita_det),
+        .esquerda(esquerda_det),
         .partida_tx(w_partida_tx),
-        .reg_jogada(w_reg_jogada),
+        // .reg_jogada(w_reg_jogada),
+        .reg_jogada(button_activation),
         .reg_comp(w_reg_comp),
         .expected(expected),
         .serial(serial),
@@ -77,7 +78,7 @@ module play_analyser(
         .conta_prox_char(w_conta_prox_char),
         .partida_tx(w_partida_tx),
         .zera_char(w_zera_char),
-        .reg_jogada(w_reg_jogada),
+        // .reg_jogada(w_reg_jogada),
         .reg_comp(w_reg_comp),
         .pronto_comparacao(pronto_comparacao),
         .pronto(pronto)

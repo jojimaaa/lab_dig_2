@@ -56,7 +56,18 @@ module interface_hcsr04_fd (
         .pronto (fim_medida)
     );
 	 
-	 contador_m #(.M(50_000_000), .N(28)) contador_1sec (
+	//  contador_m #(.M(50_000_000), .N(28)) contador_1sec (
+    //     .clock(clock),
+    //     .zera_as(),
+    //     .zera_s(zera_timeout),
+    //     .conta(conta_timeout),
+    //     .Q(),
+    //     .fim(timeout),
+    //     .meio()
+    // );
+
+//Para teste
+	 contador_m #(.M(120_000_0), .N(28)) contador_1sec (
         .clock(clock),
         .zera_as(),
         .zera_s(zera_timeout),

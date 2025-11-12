@@ -46,7 +46,7 @@ module play_analyser_fd(
                                           7'b0000000;
 
 
-    registrador_n #(.N(8)) registrador_botoes (
+    registrador_n #(.N(7)) registrador_botoes (
         .clock  (clock),
         .clear  (),
         .enable (reg_jogada),
@@ -54,7 +54,7 @@ module play_analyser_fd(
         .Q      (botao_ascii_reg)
     );
 
-    registrador_n #(.N(8)) registrador_pos (
+    registrador_n #(.N(7)) registrador_pos (
         .clock  (clock),
         .clear  (),
         .enable (reg_jogada),
