@@ -15,6 +15,8 @@ module neurosync_controller_single_uc(
     output reg  zera_prep_jogo,
     output reg  set_pos,
     output reg  medir,
+    output reg  enable_mov,
+    output reg  show_leds_servo,
     output reg  jogando
 );
 
@@ -68,6 +70,14 @@ module neurosync_controller_single_uc(
         set_pos             = (Eatual == prepara_pergunta);
         jogando             = (Eatual == prepara_pergunta || Eatual == aguarda_med_faixa || Eatual == aguarda_resp_certa || Eatual == proxima_pergunta);
         medir               = (Eatual == aguarda_med_faixa);
+        enable_mov          = (opcode == 00 || opcode == 01 || opcode == 11 || Eatual == escolhe_modo);
+        show_leds_servo     = (Eatual == escolhe_modo || 
+                               Eatual == prepara_pergunta || 
+                               Eatual == aguarda_med_faixa || 
+                               Eatual == aguarda_resp_certa || 
+                               Eatual == proxima_pergunta ||
+                               Eatual == aguarda_confirma_modo || 
+                               Eatual == prepara_jogo);
     end
 
 

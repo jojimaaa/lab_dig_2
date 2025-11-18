@@ -76,6 +76,7 @@ module neurosync_controller_single_tb();
         #(2*clockPeriod);
         reset_in = 1;
         #(11_000_000); // 2 us
+        // #(100_000_000)
         reset_in = 0;
 
         // Espera de 400us
@@ -107,6 +108,12 @@ module neurosync_controller_single_tb();
         botoes_in = 4'b0010;
         #(11_000_000)
         botoes_in = 4'b0000;
+        #(2*400_000); // 400 us
+
+        //direção deve estar travada
+        direita_in = 1;
+        #(11_000_000);
+        direita_in = 0;
         #(2*400_000); // 400 us
 
         // Aperta A (Certo)

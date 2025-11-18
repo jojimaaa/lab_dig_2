@@ -9,6 +9,7 @@ module neurosync_controller_single(
     input  echo,
     
     output [3:0] leds,
+    output [3:0] leds_servo,
     output trigger,
     output pwm,
     output db_pwm,
@@ -47,6 +48,8 @@ module neurosync_controller_single(
          w_zera,
          w_set_pos,
          w_jogando,
+         w_enable_mov,
+         w_show_leds_servo,
          w_medir;
 
     neurosync_controller_single_fd neurosync_controller_single_fd(
@@ -66,12 +69,15 @@ module neurosync_controller_single(
         .set_pos(w_set_pos),
         .jogando(w_jogando),
         .medir(w_medir),
+        .enable_mov(enable_mov),
+        .show_leds_servo(w_show_leds_servo),
         .pronto_play(w_pronto_play),
         .acertou_play(w_acertou_play),
         .acertou_faixa(w_acertou_faixa),
         .opcode(w_opcode),
         .is_ultima_pergunta(w_is_ultima_pergunta),
         .leds(leds),
+        .leds_servo(leds_servo),
         .trigger(trigger),
         .pwm(pwm),
         .db_pwm(db_pwm),
@@ -97,6 +103,8 @@ module neurosync_controller_single(
         .zera_prep_jogo(w_zera_prep_jogo),
         .set_pos(w_set_pos),
         .medir(w_medir),
+        .enable_mov(w_enable_mov),
+        .show_leds_servo(w_show_leds_servo),
         .jogando(w_jogando)
     );
 

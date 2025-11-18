@@ -5,6 +5,7 @@ module contador_vai_vem #(parameter M=100, N=7)
     input  wire          set_pos,
     input  wire          vai,
     input  wire          vem,
+    input  wire          enable_mov,
     input  wire [N-1:0]  D,
     output reg  [N-1:0]  Q,
     output reg           fim,

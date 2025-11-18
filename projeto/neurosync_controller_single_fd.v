@@ -14,6 +14,8 @@ module neurosync_controller_single_fd (
     input  set_pos,
     input  jogando,
     input  medir,
+    input  enable_mov,
+    input  show_leds_servo,
     
     output pronto_play,
     output acertou_play,
@@ -22,6 +24,7 @@ module neurosync_controller_single_fd (
     output is_ultima_pergunta,
 
     output [3:0] leds,
+    output [3:0] leds_servo,
     output trigger,
     output pwm,
     output db_pwm,
@@ -48,6 +51,7 @@ module neurosync_controller_single_fd (
 
     wire [1:0]  opcode_mem;
     wire [3:0]  leds_mem;
+    wire [3:0]  leds_servo_decod;
     wire [1:0]  pos_inicial_mem;
     wire [11:0] lim_inf_mem;
     wire [11:0] lim_sup_mem;
@@ -67,7 +71,15 @@ module neurosync_controller_single_fd (
     assign expected_mem    = w_memory_out[27:0];
 
     assign opcode = opcode_mem;
-    assign leds = (jogando == 1'b1) ? leds_mem : 4'b1111;
+    assign leds       = (jogando == 1'b1) ? leds_mem : 4'b1111;
+    assign leds_servo = (show_leds_servo == 1'b1) ? leds_servo_decod : 4'b1111;
+
+
+
+    decodificador_leds_servo decodificador_leds_servo (
+        .servo_pos(w_pos),
+        .leds_servo(leds_servo_decod)
+    );
 
     //Registradores
     registrador_n #(.N(2)) registrador_modo (
@@ -147,6 +159,7 @@ module neurosync_controller_single_fd (
         .set_pos(set_pos),
         .direita(direita),
         .esquerda(esquerda),
+        .enable_mov(enable_mov),
         .pos_inicial(pos_inicial_mem),
         .pwm(pwm),
         .pos(w_pos),
