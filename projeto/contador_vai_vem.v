@@ -18,14 +18,14 @@ module contador_vai_vem #(parameter M=100, N=7)
     end else if (clock) begin
       if (set_pos) begin
         Q <= D;
-      end else if (vai) begin
+      end else if (vai && enable_mov) begin
         if (Q == M-1) begin
           Q <= M-1;             //trava no máx
         end else begin
           // Q <= Q + 1;
           Q <= Q + 1'b1;
         end
-      end else if (vem) begin
+      end else if (vem && enable_mov) begin
         if (Q == 0) begin
           Q <= 0;               //trava no mín
         end else begin

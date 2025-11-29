@@ -50,6 +50,9 @@ module neurosync_controller_single(
          w_jogando,
          w_enable_mov,
          w_show_leds_servo,
+         w_conta_idle,
+         w_zera_idle,
+         w_fim_idle,
          w_medir;
 
     neurosync_controller_single_fd neurosync_controller_single_fd(
@@ -69,7 +72,11 @@ module neurosync_controller_single(
         .set_pos(w_set_pos),
         .jogando(w_jogando),
         .medir(w_medir),
-        .enable_mov(enable_mov),
+        .enable_mov(w_enable_mov),
+        .zera_idle(w_zera_idle),
+        .conta_idle(w_conta_idle),
+            
+        .fim_idle(w_fim_idle),
         .show_leds_servo(w_show_leds_servo),
         .pronto_play(w_pronto_play),
         .acertou_play(w_acertou_play),
@@ -84,7 +91,8 @@ module neurosync_controller_single(
         .hex0(hex0),
         .hex1(hex1),
         .hex2(hex2),
-        .serial(serial)
+        .serial(serial),
+		  .win(w_win)
     );
 
     neurosync_controller_single_uc neurosync_controller_single_uc(
@@ -105,8 +113,15 @@ module neurosync_controller_single(
         .medir(w_medir),
         .enable_mov(w_enable_mov),
         .show_leds_servo(w_show_leds_servo),
-        .jogando(w_jogando)
+        .zera_idle(w_zera_idle),
+        .conta_idle(w_conta_idle),
+            
+        .fim_idle(w_fim_idle),
+        .jogando(w_jogando),
+		  .win(w_win)
     );
+	 
+	 wire w_win;
 
     edge_detector jogar_detector (
         .clock(clock),

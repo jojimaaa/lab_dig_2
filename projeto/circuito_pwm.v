@@ -15,10 +15,10 @@
  
 module circuito_pwm #(    // valores default
     parameter conf_periodo = 1_000_000, // Período do sinal PWM [1000000 => f=50Hz (20ms)]
-    parameter largura_000   = 56250,    //22,5 dgr
-    parameter largura_001   = 68750,    //67,5 dgr
-    parameter largura_010   = 81250,    //112,5 dgr
-    parameter largura_011   = 93750    //157,5 dgr
+    parameter largura_011   = 56250,    //22,5 dgr
+    parameter largura_010   = 68750,    //67,5 dgr
+    parameter largura_001   = 81250,    //112,5 dgr
+    parameter largura_000   = 93750    //157,5 dgr
 ) (
     input        clock,
     input        set_pos,

@@ -8,8 +8,11 @@ module neurosync_controller_single_uc(
     input       acertou_play,
     input       pronto_play,
     input       is_ultima_pergunta,
+    input       fim_idle,
  
     output reg  zera,
+    output reg  conta_idle,
+    output reg  zera_idle,
     output reg  conta_pergunta,
     output reg  registra_modo,
     output reg  zera_prep_jogo,
@@ -17,7 +20,8 @@ module neurosync_controller_single_uc(
     output reg  medir,
     output reg  enable_mov,
     output reg  show_leds_servo,
-    output reg  jogando
+    output reg  jogando,
+	 output reg  win
 );
 
     reg [3:0] Eatual, Eprox;
@@ -35,6 +39,7 @@ module neurosync_controller_single_uc(
     parameter proxima_pergunta          = 4'b1010;
     parameter aguarda_confirma_modo     = 4'b1011;
     parameter aguarda_confirma_feedback = 4'b1100;
+    parameter faixa_idle                = 4'b1101;
 
     always @(posedge clock, posedge reset) begin
         if (reset)
@@ -51,7 +56,8 @@ module neurosync_controller_single_uc(
             escolhe_modo:               Eprox = confirma_det ? aguarda_confirma_modo : escolhe_modo;
             aguarda_confirma_modo:      Eprox = pronto_play ? prepara_jogo : aguarda_confirma_modo;
             prepara_jogo:               Eprox = prepara_pergunta;
-            prepara_pergunta:           Eprox = (opcode == 2'b11) ? aguarda_med_faixa : aguarda_resp_certa; 
+            prepara_pergunta:           Eprox = (opcode == 2'b11) ? faixa_idle : aguarda_resp_certa;
+            faixa_idle:                 Eprox = fim_idle ? aguarda_med_faixa : faixa_idle; 
             aguarda_med_faixa:          Eprox = acertou_faixa ? feedback : aguarda_med_faixa;
             aguarda_resp_certa:         Eprox = (acertou_play && pronto_play) ? feedback : aguarda_resp_certa;
             feedback:                   Eprox = confirma_det ? aguarda_confirma_feedback : feedback;
@@ -68,10 +74,14 @@ module neurosync_controller_single_uc(
         registra_modo       = (Eatual == escolhe_modo);
         zera_prep_jogo      = (Eatual == prepara_jogo);
         set_pos             = (Eatual == prepara_pergunta);
-        jogando             = (Eatual == prepara_pergunta || Eatual == aguarda_med_faixa || Eatual == aguarda_resp_certa || Eatual == proxima_pergunta);
+        zera_idle           = (Eatual != faixa_idle);
+        conta_idle          = (Eatual == faixa_idle);
+        jogando             = (Eatual == prepara_pergunta || Eatual == faixa_idle || Eatual == aguarda_med_faixa || Eatual == aguarda_resp_certa || Eatual == proxima_pergunta);
         medir               = (Eatual == aguarda_med_faixa);
-        enable_mov          = (opcode == 00 || opcode == 01 || opcode == 11 || Eatual == escolhe_modo);
+        enable_mov          = (opcode == 2'b10 || opcode == 2'b01 || opcode == 2'b11 || Eatual == escolhe_modo);
+		  win					    = (Eatual == ganhou);
         show_leds_servo     = (Eatual == escolhe_modo || 
+                               Eatual == faixa_idle ||
                                Eatual == prepara_pergunta || 
                                Eatual == aguarda_med_faixa || 
                                Eatual == aguarda_resp_certa || 

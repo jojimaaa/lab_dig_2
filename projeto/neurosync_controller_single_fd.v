@@ -16,7 +16,11 @@ module neurosync_controller_single_fd (
     input  medir,
     input  enable_mov,
     input  show_leds_servo,
+    input  zera_idle,
+    input  conta_idle,
+	 input  win,
     
+    output fim_idle,
     output pronto_play,
     output acertou_play,
     output acertou_faixa,
@@ -71,10 +75,14 @@ module neurosync_controller_single_fd (
     assign expected_mem    = w_memory_out[27:0];
 
     assign opcode = opcode_mem;
-    assign leds       = (jogando == 1'b1) ? leds_mem : 4'b1111;
-    assign leds_servo = (show_leds_servo == 1'b1) ? leds_servo_decod : 4'b1111;
-
-
+    assign leds       = (jogando == 1'b1) ? leds_mem : (win == 1'b1) ? 4'b0101 : 4'b1111;
+    assign leds_servo = (show_leds_servo == 1'b1) ? ((opcode_mem == 2'b00 && pos_inicial_mem == 2'b00) ? 4'b0000 : leds_servo_decod) : (win == 1'b1) ? 4'b0101 : 4'b1111;
+	
+	 //assign leds       = (jogando == 1'b1) ? leds_mem : 4'b1111;
+    //assign leds_servo = (show_leds_servo == 1'b1) ? leds_servo_decod : 4'b1111;
+	 
+    wire w_med_faixa_reset;
+    assign w_med_faixa_reset = (reset_det == 1'b1) || (botoes_det[3] == 1'b1);
 
     decodificador_leds_servo decodificador_leds_servo (
         .servo_pos(w_pos),
@@ -99,6 +107,16 @@ module neurosync_controller_single_fd (
         .SEL(w_modo),
         .MUX_OUT(w_memory_out)
     );
+
+    contador_m #(.M(10_000_000), .N(32)) contador_faixa_idle (
+    .clock(clock),
+    .zera_as(reset_det),
+    .zera_s(zera_idle),
+    .conta(conta_idle),
+    .Q(),
+    .fim(fim_idle),
+    .meio()
+);
 
     //Contadores
     contador_m #(.M(8), .N(3)) contador_memoria (
@@ -139,7 +157,7 @@ module neurosync_controller_single_fd (
     //Componentes
     medidor_faixa medidor_faixa(
         .clock(clock),
-        .reset(reset),
+        .reset(w_med_faixa_reset),
         .medir(medir),
         .upperL(lim_sup_mem),
         .lowerL(lim_inf_mem),
